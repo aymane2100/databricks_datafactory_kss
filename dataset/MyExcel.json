@@ -1,0 +1,22 @@
+{
+	"name": "MyExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MyBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Persons",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.xlsx",
+				"container": "demo"
+			},
+			"range": "C9:E13",
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
